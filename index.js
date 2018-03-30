@@ -8,7 +8,7 @@
  * Perform a modulo operation.
  * @param {number} dividend A dividend
  * @param {number} divisor A divisor
- * @return {number} Resulot of the modulo operation
+ * @return {number} Result of the modulo operation
  */
 export function mod (dividend, divisor) {
   return ((dividend % divisor) + divisor) % divisor
