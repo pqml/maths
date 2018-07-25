@@ -1,6 +1,6 @@
 {
   "name": "@internet/maths",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Maths utilities",
   "source": "index.js",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/interneeeeet/maths.git"
+    "url": "git+https://github.com/pqml/maths.git"
   },
   "keywords": [
     "maths"
@@ -27,9 +27,9 @@
   "author": "pqml",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/interneeeeet/maths/issues"
+    "url": "https://github.com/pqml/maths/issues"
   },
-  "homepage": "https://github.com/interneeeeet/maths#readme",
+  "homepage": "https://github.com/pqml/maths#readme",
   "devDependencies": {
     "docdash": "^0.4.0",
     "eslint": "^4.19.1",

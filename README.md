@@ -1,8 +1,8 @@
 # Maths
 Maths utilities
 
-[→ Documentation](https://interneeeeet.github.io/maths/docs) |
-[→ Example](https://interneeeeet.github.io/maths)
+[→ Documentation](https://pqml.github.io/maths/docs) |
+[→ Example](https://pqml.github.io/maths)
 
 <br><br>
 
@@ -38,9 +38,15 @@ import {} from '@internet/maths'
 <br>
 
 ## Documentation
-Full documentation available from https://interneeeeet.github.io/maths/docs
+Full documentation available from https://pqml.github.io/maths/docs
 
 <br>
 
 ## License
 [MIT.](LICENSE)
+
+<br><br>
+
+<i>`maths` is a package of the [@internet](https://www.npmjs.com/org/internet) npm scope. </i>
+
+_[@internet](https://www.npmjs.com/org/internet) is a collection of opinionated and interoperables front-end npm ES6 modules, with minimal external dependencies._
