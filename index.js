@@ -55,8 +55,20 @@ export function norm (value, min, max) {
  * @param {number} amount Amount to lerp between the two number (from 0 to 1)
  * @return {number} Lerped value
  */
-export function lerp (start, end, amount) {
-  return start * (1 - amount) + end * amount
+export function lerp (start, end, t) {
+  return start * (1 - t) + end * t
+}
+
+/**
+ * Frame-rate aware damping function
+ * @param {number} source Initial value
+ * @param {number} target Target value
+ * @param {number} smoothing Smoothing rate (inverse of lerp: 0 will give you back the target value)
+ * @param {number} dt Delta-time (in milliseconds)
+ * @return {number} Damped value
+ */
+export function damp (a, b, smoothing, dt) {
+  return lerp(a, b, 1 - Math.exp(-smoothing * dt))
 }
 
 /**
