@@ -1,4 +1,4 @@
-import * as m from '..'
+import * as m from '../lib'
 import test from 'tape-promise/tape'
 
 test('mod', t => {
