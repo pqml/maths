@@ -1,6 +1,6 @@
 {
   "name": "@internet/maths",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Maths utilities",
   "source": "lib/index.js",
   "main": "lib/index.js",
@@ -14,6 +14,7 @@
   "scripts": {
     "test": "tape -r esm test/index.js | tap-spec",
     "lint": "eslint lib/** test/**",
+    "es": "es-check --module es5 lib/**/*.js",
     "demo": "microbundle -i demo/demo.js -f umd -o demo --target browser",
     "demo:serve": "npm run demo -- -w & light-server -s demo -p 8080 -w demo/**/*",
     "demo:deploy": "npm run demo && ghp demo -f",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@internet/eslint-config": "0.0.1",
+    "es-check": "^5.0.0",
     "esm": "^3.0.84",
     "ghp": "^1.3.1",
     "jsdoc-to-markdown": "^4.0.1",
