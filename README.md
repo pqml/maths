@@ -38,7 +38,7 @@ import { mod, map, lerp, ... } from '@internet/maths'
     * [.mod(dividend, divisor)](#module_maths.mod) ⇒ <code>number</code>
     * [.map(value, start1, stop1, start2, stop2)](#module_maths.map) ⇒ <code>number</code>
     * [.clamp(value, min, max)](#module_maths.clamp) ⇒ <code>number</code>
-    * [.norm(value, min, max)](#module_maths.norm)
+    * [.norm(value, min, max)](#module_maths.norm) ⇒ <code>number</code>
     * [.lerp(start, end, amount)](#module_maths.lerp) ⇒ <code>number</code>
     * [.damp(source, target, smoothing, dt)](#module_maths.damp) ⇒ <code>number</code>
     * [.dist(x1, y1, x2, y2)](#module_maths.dist) ⇒ <code>number</code>
@@ -83,7 +83,7 @@ Re-maps a number from one range to another.
 | value | <code>number</code> | The incoming value to be converted |
 | start1 | <code>number</code> | Lower bound of the value's current range |
 | stop1 | <code>number</code> | Upper bound of the value's current range |
-| start2 | <code>number</code> | Lower bound of the value's target range |
+| start2 | <code>number</code> | Lower bound of the value`'s target range |
 | stop2 | <code>number</code> | Upper bound of the value's target range |
 
 
@@ -107,10 +107,11 @@ Constrains a value to not exceed a maximum and minimum value.
 
 <a name="module_maths.norm"></a>
 
-#### maths.norm(value, min, max)
+#### maths.norm(value, min, max) ⇒ <code>number</code>
 Normalizes a number from another range into a value between 0 and 1.
 
 **Kind**: static method of [<code>maths</code>](#module_maths)  
+**Returns**: <code>number</code> - Normalized value  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -150,7 +151,7 @@ Frame-rate aware damping function
 | --- | --- | --- |
 | source | <code>number</code> | Initial value |
 | target | <code>number</code> | Target value |
-| smoothing | <code>number</code> | Smoothing rate (inverse of lerp: 0 will give you back the target value) |
+| smoothing | <code>number</code> | Smoothing rate |
 | dt | <code>number</code> | Delta-time (in milliseconds) |
 
 
